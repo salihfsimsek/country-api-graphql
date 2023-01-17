@@ -1,4 +1,19 @@
 export const Country = {
-    continent: ((parent, _, { db }) => db.continents.find(continent => continent.code === parent.continent_code)),
-    languages: ((parent, _, { db }) => db.languages.filter(language => language.code === parent.code))
+    continent: (({ continent }, _, { db }) => {
+        const continentName = db.continents[continent]
+        return {
+            code: continent,
+            name: continentName
+        }
+    }),
+    languages: ((parent, _, { db }) => {
+        let languages = parent.languages.map(code => {
+            const language = db.languages[code];
+            return {
+                ...language,
+                code,
+            };
+        })
+        return languages
+    })
 }

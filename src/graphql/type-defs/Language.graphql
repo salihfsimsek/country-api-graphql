@@ -1,12 +1,10 @@
 type Query {
   languages: [Language!]!
-  language(code: String!): Language
+  language(code: ID!): Language
 }
 
 type Language {
-  id: ID!
+  code: ID!
   name: String!
-  code: String!
-  continent_code: String
   countries: [Country!]!
 }

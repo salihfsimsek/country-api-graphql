@@ -5,7 +5,8 @@ import resolvers from '@resolvers'
 import typeDefs from '@typeDefs'
 
 //Datas
-import db from './datas'
+// import db from './datas'
+import db from 'countries-list'
 
 const yoga = createYoga({
     landingPage: false,

@@ -1,13 +1,17 @@
 type Query {
   countries: [Country!]!
-  country(code: String!): Country
+  country(code: ID!): Country
 }
 
 type Country {
-  id: ID!
+  code: ID!
   name: String!
-  code: String!
-  continent_code: String!
+  native: String!
+  phone: String!
+  capital: String!
+  currency: String!
+  emoji: String!
+  emojiU: String!
   continent: Continent!
   languages: [Language!]!
 }
