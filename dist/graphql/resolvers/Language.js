@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Language=void 0;var Language={countries:function countries(parent,_,_ref){var db=_ref.db;return db.countries.filter(function(country){return country.code===parent.code})}};exports.Language=Language;
