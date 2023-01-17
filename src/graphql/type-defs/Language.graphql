@@ -1,0 +1,11 @@
+type Query {
+  languages: [Language!]!
+  language(code: String!): Language
+}
+
+type Language {
+  id: ID!
+  name: String!
+  code: String!
+  continent_code: String
+}
