@@ -9,7 +9,7 @@ import db from './datas'
 
 const yoga = createYoga({
     landingPage: false,
-    graphqlEndpoint: '/console',
+    graphqlEndpoint: '/',
     schema: createSchema({
         typeDefs,
         resolvers
