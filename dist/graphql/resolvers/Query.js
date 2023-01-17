@@ -1,4 +1,0 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.Query=void 0;var Query={//Country queries
-countries:function countries(_,__,_ref){var db=_ref.db;return db.countries},country:function country(_,_ref2,_ref3){var code=_ref2.code;var db=_ref3.db;return db.countries.find(function(country){return country.code===code})},//Language queries
-languages:function languages(_,__,_ref4){var db=_ref4.db;return db.languages},language:function language(_,_ref5,_ref6){var code=_ref5.code;var db=_ref6.db;return db.languages.find(function(language){return language.code===code})},//Continent queries
-continents:function continents(_,__,_ref7){var db=_ref7.db;return db.continents},continent:function continent(_,_ref8,_ref9){var code=_ref8.code;var db=_ref9.db;return db.continents.find(function(continent){return continent.code===code})}};exports.Query=Query;
