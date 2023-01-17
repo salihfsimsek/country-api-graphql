@@ -1,5 +1,11 @@
 # country-api-graphql
 
+## Technologies
+
+    - JavaScript
+    - Graphql
+    - Babel
+
 ## Scripts
 
 ### yarn dev
